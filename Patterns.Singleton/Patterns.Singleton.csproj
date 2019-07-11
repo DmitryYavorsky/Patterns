@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9807F104-B724-422A-93F3-7DE1336B8D5A}</ProjectGuid>
+    <ProjectGuid>{4501B4BB-B0A5-48F7-BC81-B1EDCE938C75}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Patterns.Factory</RootNamespace>
-    <AssemblyName>Patterns.Factory</AssemblyName>
+    <RootNamespace>Patterns.Singleton</RootNamespace>
+    <AssemblyName>Patterns.Singleton</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -42,18 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Implementations\Base\BaseCreator.cs" />
-    <Compile Include="Implementations\Base\BaseMessage.cs" />
-    <Compile Include="Implementations\TelegramMessage.cs" />
-    <Compile Include="Implementations\TelegramMessageCreator.cs" />
-    <Compile Include="Interfaces\IMessage.cs" />
-    <Compile Include="Interfaces\IMessageCreator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Singleton.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
