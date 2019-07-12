@@ -9,6 +9,7 @@ namespace Patterns.Factory.Implementations.Base
 {
     public abstract class BaseCreator : IMessageCreator
     {
+        //Here we have only factory method that we can override in derived class
         public abstract IMessage CreateMessage(string text, string source, string destination);
     }
 }

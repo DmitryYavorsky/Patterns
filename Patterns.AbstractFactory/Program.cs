@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Patterns.AbstractFactory.Implementations;
 
-namespace Patterns.Singleton
+namespace Patterns.AbstractFactory
 {
     class Program
     {
         static void Main(string[] args)
         {
-            var sing = Singleton.GetInstance();
-            Console.WriteLine(sing.Date);
-            Console.Read();
+            var hero = new SomeHero(new FirstFactory());
+            Console.WriteLine(hero.GetHashCode());
         }
     }
 }
