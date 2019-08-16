@@ -19,9 +19,9 @@ namespace Decorator.Implementations
             set { this._component.Text = value; }
         }
 
-        public void Draw()
+        public virtual void Draw()
         {
-            throw new NotImplementedException();
+            _component.Draw();
         }
     }
 }
